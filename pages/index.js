@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Categories, PostCard, PostWidget } from '../components'
-import FeaturedPosts from '../sections/FeaturedPosts';
 import { getPosts } from '../services'
 
 export default function Home({ posts }) {
@@ -13,7 +12,6 @@ export default function Home({ posts }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <FeaturedPosts /> 
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div className='lg:col-span-4 col-span-1'>
           <div className='lg:sticky relative top-8'>
